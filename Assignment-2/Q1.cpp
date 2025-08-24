@@ -4,7 +4,7 @@ using namespace std;
 int binarysearch(int arr[],int n, int key){
     int s=0;
     int e=n;
-    while(s<=n){
+    while(s<=e){
         int mid=(s+e)/2;
 
         if(arr[mid]==key){
@@ -25,15 +25,15 @@ int main(){
     cout<<"\n enter the size of array:";
     cin>>n;
 
-    cout<<"\n enter the element of array:";
+    cout<<"enter the element of array:";
     for(int i=0; i<n; i++){
         cin>>arrr[i];
     }
 
-    cout<<"\n enter the element to search:";
+    cout<<"enter the element to search:";
     cin>>key;
 
-    cout<<"\nthe element found is:"<<binarysearch(arrr, n, key);
+    cout<<"the element found is:"<<binarysearch(arrr, n, key);
 
     return 0;
 }
