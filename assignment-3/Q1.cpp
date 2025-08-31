@@ -5,7 +5,7 @@ using namespace std;
 int stackArr[MAX];
 int top = -1;
 
-// Push operation
+
 void push(int val) {
     if (top == MAX - 1) {
         cout << "Stack is Full!" << endl;
@@ -15,7 +15,7 @@ void push(int val) {
     }
 }
 
-// Pop operation
+
 void pop() {
     if (top == -1) {
         cout << "Stack is Empty!" << endl;
@@ -24,19 +24,19 @@ void pop() {
     }
 }
 
-// Check empty
+
 void isEmpty() {
     if (top == -1) cout << "Stack is Empty!" << endl;
     else cout << "Stack is NOT Empty!" << endl;
 }
 
-// Check full
+
 void isFull() {
     if (top == MAX - 1) cout << "Stack is Full!" << endl;
     else cout << "Stack is NOT Full!" << endl;
 }
 
-// Display
+
 void display() {
     if (top == -1) {
         cout << "Stack is Empty!" << endl;
@@ -47,7 +47,7 @@ void display() {
     }
 }
 
-// Peek
+
 void peek() {
     if (top == -1) cout << "Stack is Empty!" << endl;
     else cout << "Top element is: " << stackArr[top] << endl;
