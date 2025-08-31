@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     string str, result="";
     cout << "Enter a string: ";
-    getline(cin, str);
+    cin>>str;
 
     for(char c : str) {
         char ch = tolower(c);

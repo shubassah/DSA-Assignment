@@ -7,7 +7,8 @@ int main() {
     cin >> n;
 
     int diag[n];  
-    for (int i = 0; i < n; i++) diag[i] = 0;
+    for (int i = 0; i < n; i++) 
+    diag[i] = 0;
 
     cout << "Enter diagonal elements: ";
     for (int i = 0; i < n; i++) {
